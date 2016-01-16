@@ -37,7 +37,7 @@ if (isset($action)) {
 					$query=$query . ',' . $_GET[$columns[0]];
 				}
 				else {
-					$query=$query . ',"' . $_GET[$columns[0]] . '"';					
+					$query=$query . ',"' . $_GET[$columns[0]] . '"';
 				}
 
 			}
@@ -50,7 +50,7 @@ if (isset($action)) {
 
 		$query='DELETE FROM ' . $table . ' WHERE id=' . $id;
 		if ($table=='participants'or$table=='papers') $query1='DELETE FROM pp WHERE '. substr($table,0,-1) . '_id=' . $id;
-	
+
 	} elseif ($action=='modify') {
 
 		$result=mysql_query('SHOW fields FROM ' . $table);
@@ -64,7 +64,7 @@ if (isset($action)) {
 					$query=$query . $columns[0] . '=' . $_GET[$columns[0]] . ', ';
 				}
 				else {
-					$query=$query . $columns[0] . '="' . $_GET[$columns[0]] . '", ';					
+					$query=$query . $columns[0] . '="' . $_GET[$columns[0]] . '", ';
 				}
 
 			}
@@ -87,6 +87,7 @@ mysql_query($query1);
 echo '<form action="show.php?" method="get">';
 echo '<input type="hidden" name="ShowTable" value="' . $table . '" />';
 echo '<input type="submit" value="Show ' . $table . '" /><br /></form>';
+echo '<form action="javascript:history.go(-1)" method="get"><input type="submit" value="back" /><br /></form>';
 
 ?>
 

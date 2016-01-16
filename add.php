@@ -73,7 +73,7 @@ if (isset($_GET['table'])) {
 			<input type="hidden" name="table" value="' . $table . '" />
 			<input type="hidden" name="action" value="' . $action . '" />
 			<input type="submit" value="' . $action . '" /><br /></form>';
-	echo '<form action="show.php?" method="get"><input type="submit" value="back" /><br /></form>';
+	echo '<form action="javascript:history.go(-1)" method="get"><input type="submit" value="back" /><br /></form>';
 }
 
 
