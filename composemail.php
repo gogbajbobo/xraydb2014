@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Xray2014DB Compose e-mail</title>
 	<style type="text/css">
 		textarea {width: 50em;}

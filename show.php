@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Xray2014DB Show</title>
 	<style type="text/css">
 		table {border-style:solid; border-width:thin; margin: 1em 0; border-collapse: collapse;}

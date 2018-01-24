@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Xray2014DB Add</title>
 	<style type="text/css">
 		input, textarea, select {width: 25em;}
